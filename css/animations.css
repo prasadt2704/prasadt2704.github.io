@@ -1,0 +1,144 @@
+/*animations*/
+
+/******************
+* Bounce in right *
+*******************/
+
+
+.animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+.fadeInRight, .fadeInLeft, .fadeInUp, .fadeInDown{
+    opacity:0;
+    -webkit-transform: translateX(400px); 
+    transform: translateX(400px); 
+}
+
+.flipInX, .flipInY, .rotateIn, .rotateInUpLeft, .rotateInUpRight, .rotateInDownLeft, .rotateDownUpRight, .rollIn{
+    opacity:0;
+}
+
+
+/**********
+* Fade In *
+**********/ 
+@-webkit-keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;
+        display:block;} 
+} 
+@keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;
+        display:block;} 
+}
+.fadeIn{
+    opacity:0;
+}
+.fadeIn.go { 
+    -webkit-animation-name: fadeIn; 
+    animation-name: fadeIn; 
+}
+
+
+/********
+* Shake *
+********/
+@-webkit-keyframes shake { 
+    0%, 100% {-webkit-transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);} 
+} 
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {transform: translateX(10px);} 
+} 
+.shake.go { 
+    -webkit-animation-name: shake; 
+    animation-name: shake; 
+}
+
+/*************
+* FadeInUp *
+*************/
+
+@-webkit-keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(400px); 
+    } 
+    50%{
+       opacity: 0.3; 
+    }
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+@keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(400px); 
+    } 
+    50%{
+       opacity: 0.3; 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+.fadeInUp{ 
+    opacity: 0; 
+    -webkit-transform: translateY(400px); 
+    transform: translateY(400px);
+}
+.fadeInUp.go { 
+    -webkit-animation-name: fadeInUp; 
+    animation-name: fadeInUp; 
+}
+
+/*************
+* FadeInDown *
+*************/
+
+@-webkit-keyframes fadeInDown { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(-400px); 
+    } 
+    50%{
+       opacity: 0.3; 
+    }
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+@keyframes fadeInDown { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(-400px); 
+    } 
+    50%{
+       opacity: 0.3; 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+.fadeInDown{ 
+    opacity: 0; 
+    -webkit-transform: translateY(-400px); 
+    transform: translateY(-400px);
+}
+.fadeInDown.go { 
+    -webkit-animation-name: fadeInDown; 
+    animation-name: fadeInDown; 
+}
